@@ -35,7 +35,7 @@ const HomePage = ({ query }) => {
       {loading ? (
         <>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Skeleton cards={20} />
+            <Skeleton cards={21} />
           </div>
         </>
       ) : (
@@ -45,7 +45,7 @@ const HomePage = ({ query }) => {
               <ArticleCard key={index} article={article} />
             ))}
           </div>
-          <Pagination page={page} setPage={setPage} totalResults={totalResults} pageSize={20} />
+          <Pagination page={page} setPage={setPage} totalResults={totalResults} pageSize={21} />
         </>
       )}
     </div>
