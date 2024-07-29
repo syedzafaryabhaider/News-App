@@ -30,6 +30,10 @@ const CategoryPage = () => {
     getCategoryNews();
   }, [category, page]);
 
+  useEffect(() => {
+    setPage(1);
+  }, [category]);
+
   return (
     <div className="pt-12 container mx-auto p-4 bg-light-background dark:bg-dark-background">
       {loading ? (
